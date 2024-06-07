@@ -111,43 +111,58 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+# Getting Started
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+Ensure you have Node.js, npm, ReactNative, Watchman, and Xcode installed. You will also need Expo CLI for the React Native app.
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Node.js: 
+   ```sh
+   npm install node
+   ```
+
+Expo CLI:
+   ```sh
+   npm install -g expo-cli
+   ```
+
+Watchman:
+   ```sh
+   brew update && brew install watchman (MacOS)
+   ```
+
+Azure:
+   ```sh
+   brew tap azure/functions (Apple)
+   brew install azure-functions-core-tools@4 (MacOS)
+   ```
+
+Xcode: download here: https://developer.apple.com/xcode/ (MacOS)
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+Ensure you have both the Karpool-App and the Karpool-Backend repos cloned to your local machines. 
+1. Clone the repos in the same directory
    ```sh
-   git clone andrew haha
+   git clone https://github.com/your_username/Karpool-App.git
+   git clone https://github.com/your_username/Karpool-Backend.git
    ```
-3. Install NPM packages
+2. Install & run NPM packages for the back-end
    ```sh
+   cd karpool-backend
    npm install
+   npm run start
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Install & run NPM packages for the front-end
+   ```sh
+   cd karpool-app
+   npm install
+   npm run start
    ```
 
+Note: install the correct front-end dependencies as your console tells you to.
+   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
